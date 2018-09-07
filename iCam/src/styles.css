@@ -1,0 +1,18 @@
+@import  '~bootstrap/dist/css/bootstrap.min.css';
+body
+{
+  width: 100%;
+  height: 100%;
+}
+
+div.box
+{
+    /*background-image: url('/assets/photos/001.jpg');*/
+    background-size: 99%;
+    position: fixed;
+    top: 56px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+
+}
