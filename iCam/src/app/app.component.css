@@ -1,0 +1,18 @@
+div.title
+{
+    height: 16%;
+    text-align: center;
+    display: flex;
+}
+
+span.header
+{
+    vertical-align: middle;
+    width: 70%;
+}
+
+span.logo
+{
+    vertical-align: middle;
+    width: 30%;
+}
