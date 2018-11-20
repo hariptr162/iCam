@@ -1,18 +1,21 @@
-div.title
-{
-    height: 16%;
-    text-align: center;
-    display: flex;
+div.title {
+  background-color: #000000;
+  display: flex;
+  color: #808080;
+  min-height: 70px;
+  align-items: center;
 }
 
-span.header
-{
-    vertical-align: middle;
-    width: 70%;
+span.header {
+  vertical-align: middle;
+  flex: auto;
+  padding: 10px;
+  font: bold 20px verdana;
 }
 
 span.logo
 {
     vertical-align: middle;
     width: 30%;
+    max-width: 200px;
 }
