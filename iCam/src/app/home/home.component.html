@@ -1,2 +1,12 @@
-<div class="box" [ngStyle]="{'background-image':'url('+ photo +')'}" >
+<div class="main-container">
+    <div class="box" *ngFor="let photo of photos">
+        <img src="{{photo}}" (click)="onImageSelect(photo)"/>
+    </div> 
 </div>
+<div class="overlay" (click)="hidePhoto()" *ngIf='selectedPhoto'>
+    <div class="popup">
+        <img src="{{selectedPhoto}}"/>
+    </div>
+</div>
+
+
