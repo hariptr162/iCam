@@ -19,3 +19,8 @@ span.logo
     width: 30%;
     max-width: 200px;
 }
+
+div.main-container
+{
+  max-height: 100%;
+}

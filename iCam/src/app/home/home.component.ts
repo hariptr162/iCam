@@ -7,23 +7,30 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  public photo: string = "/assets/photos/001.jpg";
-  public photoTemplate: string = "/assets/photos/00{c}.jpg";
-  photoc: number = 0;
+  public photos: string[];
+  public selectedPhoto: string = "";
   constructor() { 
-    this.changeBackground();
   }
 
   ngOnInit() {
+    this.photos = [
+      "assets/photos/001.jpg",
+      "assets/photos/002.jpg",
+      "assets/photos/003.jpg",
+      "assets/photos/004.jpg",
+      "assets/photos/005.jpg",
+      "assets/photos/006.jpg",
+      "assets/photos/007.jpg",
+      "assets/photos/008.jpg"
+    ];
   }
 
-  changeBackground() {
-    this.photoc += 1;
-    if(this.photoc == 9) {
-      this.photoc = 1;
-    }
-    this.photo = this.photoTemplate.replace("{c}", this.photoc.toString());
-    setTimeout(() => { this.changeBackground(); }, 5000);
+  public onImageSelect(photo: string) {
+      this.selectedPhoto = photo;
+  }
+
+  public hidePhoto(){
+    this.selectedPhoto = "";
   }
 
 }
